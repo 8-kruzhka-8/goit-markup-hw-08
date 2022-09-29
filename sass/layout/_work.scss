@@ -1,0 +1,29 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work__case {
+    display: flex;
+    gap: 30px;
+}
+
+.work__card {
+    position: relative;
+}
+
+.work__overlay--style {
+    position: absolute;
+    @extend %align;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__overlay {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--logo-color-third);
+}

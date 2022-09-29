@@ -1,0 +1,47 @@
+.page-footer {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-footer);
+    font-size: 14px;
+    line-height: 1.41;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-cases {
+    display: flex;
+    align-items: baseline;
+}
+
+.text-footer {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--logo-color-third);
+}
+
+.address {
+    font-style: normal;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.page-footer-address {
+    color: var(--logo-color-third);
+    font-style: normal;
+}
+
+.page-footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    transition: color var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--text-color-hover);
+    }
+}

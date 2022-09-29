@@ -1,0 +1,30 @@
+.footer-list-social-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.footer-list-social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social-list-link-footer {
+    @extend %align;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--logo-color-first)
+    }
+}
+
+.social-list-icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--logo-color-third);
+}
