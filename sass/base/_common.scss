@@ -3,44 +3,58 @@ h2,
 h3,
 h4,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    background-color: var(--logo-color-third);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background-color: var(--logo-color-third);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 .button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
     margin-bottom: 50px;
+  }
 }

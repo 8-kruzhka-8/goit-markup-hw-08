@@ -1,24 +1,70 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Img.jpg);
-    background-position: center;
-    background-size: 1600px;
-    background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/image/hero/header-mobile@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 480px;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .hero__text {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 30px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+  @include font(900, 26px, 42px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/image/hero/header-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/image/hero/header-tablet@1x.jpg);
+    max-width: 768px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .hero__text {
+    max-width: 360px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(./image/hero/header-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/image/hero/header-descktop@1x.jpg);
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/image/hero/header-descktop@2x.jpg);
+    }
+  }
+}

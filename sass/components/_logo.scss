@@ -1,85 +1,58 @@
-    .logo {
-        font-family: 'Raleway', sans-serif;
-        @include font(700, 24px, 28px);
-    }
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(700, 24px, 28px);
+}
 
-    .page-logo {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        width: 134px;
-    }
+.page-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 134px;
+}
 
-    .logo-color-first {
-        color: var(--logo-color-first);
-    }
+.logo-color-first {
+  color: var(--logo-color-first);
+}
 
-    .logo-color-second {
-        color: var(--logo-color-second);
-    }
+.logo-color-second {
+  color: var(--logo-color-second);
+}
 
-    .logo-color-third {
-        color: var(--logo-color-third);
-    }
+.logo-color-third {
+  color: var(--logo-color-third);
+}
 
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .page-logo {
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
-
+@media screen and (min-width: 768px) {
+  .page-logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .logo {
-        @include font(700, 26px, 31px);
-    }
-    
-    .page-logo {
-        margin-right: 93px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        width: 145px;
-    }
-    
-    .logo-color-first {
-        color: var(--logo-color-first);
-    }
-    
-    .logo-color-second {
-        color: var(--logo-color-second);
-    }
-    
-    .logo-color-third {
-        color: var(--logo-color-third);
-    }
+  .logo {
+    @include font(700, 26px, 31px);
+  }
+
+  .page-logo {
+    margin-right: 92px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 145px;
+  }
+
+  .logo-color-first {
+    color: var(--logo-color-first);
+  }
+
+  .logo-color-second {
+    color: var(--logo-color-second);
+  }
+
+  .logo-color-third {
+    color: var(--logo-color-third);
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
 }
-
-// .logo {
-//     @include font(700, 26px, 31px);
-// }
-
-// .page-logo {
-//     margin-right: 93px;
-//     padding-top: 24px;
-//     padding-bottom: 24px;
-//     width: 145px;
-// }
-
-// .logo-color-first {
-//     color: var(--logo-color-first);
-// }
-
-// .logo-color-second {
-//     color: var(--logo-color-second);
-// }
-
-// .logo-color-third {
-//     color: var(--logo-color-third);
-// }
-
-// .footer-logo {
-//     display: inline-block;
-//     margin-bottom: 20px;
-//     width: 145px;
-// }

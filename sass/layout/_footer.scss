@@ -1,47 +1,99 @@
-.page-footer {
-    font-family: 'Roboto', sans-serif;
-    background: var(--background-footer);
-    font-size: 14px;
-    line-height: 1.41;
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer {
+  font-family: 'Roboto', sans-serif;
+  background: var(--background-footer);
+  font-size: 14px;
+  line-height: 1.41;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-cases {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .text-footer {
-    margin: 0px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--logo-color-third);
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--logo-color-third);
+  text-align: center;
 }
 
 .address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-address__link {
+  color: var(--logo-color-third);
+  font-style: normal;
+}
+
+.page-footer__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  transition: color var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-hover);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-align {
     display: flex;
-    flex-direction: column;
-    gap: 9px;
+    gap: 165px;
+  }
 }
 
-.page-footer-address {
-    color: var(--logo-color-third);
-    font-style: normal;
-}
+@media screen and (min-width: 1200px) {
+  .footer-cases {
+    // display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+  }
 
-.page-footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    transition: color var(--cubic);
+  .footer-align {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
 
-    &:hover,
-    &:focus {
-        color: var(--text-color-hover);
-    }
+  .footer-contacts {
+    align-items: start;
+  }
+
+  .text-footer {
+    text-align: start;
+  }
+
+  .address {
+    font-style: normal;
+  }
+
+  .footer-address {
+    text-align: start;
+    margin-top: 0px;
+  }
 }
