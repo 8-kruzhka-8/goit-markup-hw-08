@@ -33,6 +33,12 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .benefits__header {
+    text-align: center;
+  }
+}
+
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
